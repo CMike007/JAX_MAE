@@ -1,0 +1,30 @@
+{
+    "os": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.9",
+    "heartbeatAt": "2024-08-11T07:49:50.299016",
+    "startedAt": "2024-08-11T07:49:48.968516",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/gymnax_exchange/jaxrl/ppoS5ExecCont_Sigmoid.py",
+    "codePathLocal": null,
+    "host": "TMikes-MacBook-Air.local",
+    "username": "millionaire",
+    "executable": "/Users/millionaire/anaconda3/envs/JAX/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "/": {
+            "total": 228.27386474609375,
+            "used": 215.86352920532227
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

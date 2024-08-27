@@ -1,0 +1,103 @@
+wandb_version: 1
+
+NUM_ENVS:
+  desc: null
+  value: 10
+TOTAL_TIMESTEPS:
+  desc: null
+  value: 50000000.0
+NUM_MINIBATCHES:
+  desc: null
+  value: 2
+UPDATE_EPOCHS:
+  desc: null
+  value: 5
+NUM_STEPS:
+  desc: null
+  value: 200
+ENV_NAME:
+  desc: null
+  value: alphatradeExec-v0
+WINDOW_INDEX:
+  desc: null
+  value: -1
+DEBUG:
+  desc: null
+  value: true
+wandbOn:
+  desc: null
+  value: true
+ATFOLDER:
+  desc: null
+  value: /Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/
+PARAMSFOLDER:
+  desc: null
+  value: /Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/params/
+RESULTS_FILE:
+  desc: null
+  value: /Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/results_file_08-11_09-44
+CHECKPOINT_DIR:
+  desc: null
+  value: /Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/checkpoints_08-11_09-44
+PICTURE_DIR:
+  desc: null
+  value: /Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/plot08-11_09-44
+Plot:
+  desc: null
+  value: false
+OOE:
+  desc: null
+  value:
+    TASKSIDE: sell
+    TASK_SIZE: 2500
+    ACTION_TYPE: pure
+    LR: 2.5e-05
+    CLIP_EPS: 0.2
+    GAMMA: 0.99
+    GAE_LAMBDA: 0.95
+    REWARD_LAMBDA: 1
+    ENT_COEF: 0.1
+    VF_COEF: 0.5
+    MAX_GRAD_NORM: 2.0
+    ANNEAL_LR: true
+TAgent:
+  desc: null
+  value:
+    TASK_SIZE: 300
+    LR: 2.5e-05
+    CLIP_EPS: 0.2
+    GAE_LAMBDA: 0.95
+    REWARD_LAMBDA: 1
+    ENT_COEF: 0.1
+    VF_COEF: 0.5
+    MAX_GRAD_NORM: 2.0
+    ANNEAL_LR: true
+    OMEGA: 0.75
+    ALPHA: 1
+    GAMMA: 0.1
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.9
+    cli_version: 0.17.0
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1723362588
+    t:
+      1:
+      - 12
+      - 45
+      - 55
+      2:
+      - 12
+      - 45
+      - 55
+      3:
+      - 16
+      - 23
+      4: 3.11.9
+      5: 0.17.0
+      8:
+      - 4
+      - 5
+      13: darwin-arm64

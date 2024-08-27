@@ -1,0 +1,31 @@
+2024-08-11 09:49:48,974 INFO    MainThread:64070 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-08-11 09:49:48,974 INFO    MainThread:64070 [wandb_setup.py:_flush():76] Configure stats pid to 64070
+2024-08-11 09:49:48,974 INFO    MainThread:64070 [wandb_setup.py:_flush():76] Loading settings from /Users/millionaire/.config/wandb/settings
+2024-08-11 09:49:48,974 INFO    MainThread:64070 [wandb_setup.py:_flush():76] Loading settings from /Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/gymnax_exchange/jaxen/wandb/settings
+2024-08-11 09:49:48,975 INFO    MainThread:64070 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-08-11 09:49:48,975 INFO    MainThread:64070 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-08-11 09:49:48,975 WARNING MainThread:64070 [wandb_setup.py:_flush():76] Could not save program above cwd: /Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/gymnax_exchange/jaxrl/ppoS5ExecCont_Sigmoid.py
+2024-08-11 09:49:48,975 INFO    MainThread:64070 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': None, 'program_abspath': '/Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/gymnax_exchange/jaxrl/ppoS5ExecCont_Sigmoid.py', 'program': '/Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/gymnax_exchange/jaxrl/ppoS5ExecCont_Sigmoid.py'}
+2024-08-11 09:49:48,975 INFO    MainThread:64070 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-08-11 09:49:48,975 INFO    MainThread:64070 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-08-11 09:49:48,975 INFO    MainThread:64070 [wandb_init.py:_log_setup():520] Logging user logs to /Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/gymnax_exchange/jaxen/wandb/run-20240811_094948-8ongjg4p/logs/debug.log
+2024-08-11 09:49:48,975 INFO    MainThread:64070 [wandb_init.py:_log_setup():521] Logging internal logs to /Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/gymnax_exchange/jaxen/wandb/run-20240811_094948-8ongjg4p/logs/debug-internal.log
+2024-08-11 09:49:48,975 INFO    MainThread:64070 [wandb_init.py:init():560] calling init triggers
+2024-08-11 09:49:48,975 INFO    MainThread:64070 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {'NUM_ENVS': 10, 'TOTAL_TIMESTEPS': 50000000.0, 'NUM_MINIBATCHES': 2, 'UPDATE_EPOCHS': 5, 'NUM_STEPS': 200, 'ENV_NAME': 'alphatradeExec-v0', 'WINDOW_INDEX': -1, 'DEBUG': True, 'wandbOn': True, 'ATFOLDER': '/Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/', 'PARAMSFOLDER': '/Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/params/', 'RESULTS_FILE': '/Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/results_file_08-11_09-44', 'CHECKPOINT_DIR': '/Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/checkpoints_08-11_09-44', 'PICTURE_DIR': '/Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3/plot08-11_09-44', 'Plot': False, 'OOE': {'TASKSIDE': 'sell', 'TASK_SIZE': 2500, 'ACTION_TYPE': 'pure', 'LR': 2.5e-05, 'CLIP_EPS': 0.2, 'GAMMA': 0.99, 'GAE_LAMBDA': 0.95, 'REWARD_LAMBDA': 1, 'ENT_COEF': 0.1, 'VF_COEF': 0.5, 'MAX_GRAD_NORM': 2.0, 'ANNEAL_LR': True}, 'TAgent': {'TASK_SIZE': 300, 'LR': 2.5e-05, 'CLIP_EPS': 0.2, 'GAE_LAMBDA': 0.95, 'REWARD_LAMBDA': 1, 'ENT_COEF': 0.1, 'VF_COEF': 0.5, 'MAX_GRAD_NORM': 2.0, 'ANNEAL_LR': True, 'OMEGA': 0.75, 'ALPHA': 1, 'GAMMA': 0.1}}
+2024-08-11 09:49:48,975 INFO    MainThread:64070 [wandb_init.py:init():610] starting backend
+2024-08-11 09:49:48,975 INFO    MainThread:64070 [wandb_init.py:init():614] setting up manager
+2024-08-11 09:49:48,977 INFO    MainThread:64070 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-08-11 09:49:48,982 INFO    MainThread:64070 [wandb_init.py:init():622] backend started and connected
+2024-08-11 09:49:49,001 INFO    MainThread:64070 [wandb_init.py:init():711] updated telemetry
+2024-08-11 09:49:49,003 INFO    MainThread:64070 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-08-11 09:49:49,469 INFO    MainThread:64070 [wandb_run.py:_on_init():2396] communicating current version
+2024-08-11 09:49:49,684 INFO    MainThread:64070 [wandb_run.py:_on_init():2405] got version response upgrade_message: "wandb version 0.17.6 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-08-11 09:49:49,684 INFO    MainThread:64070 [wandb_init.py:init():795] starting run threads in backend
+2024-08-11 09:50:01,670 INFO    MainThread:64070 [wandb_run.py:_console_start():2374] atexit reg
+2024-08-11 09:50:01,670 INFO    MainThread:64070 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-08-11 09:50:01,670 INFO    MainThread:64070 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-08-11 09:50:01,670 INFO    MainThread:64070 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-08-11 09:50:01,671 INFO    MainThread:64070 [wandb_init.py:init():838] run started, returning control to user process
+2024-08-11 09:50:10,716 WARNING MsgRouterThr:64070 [router.py:message_loop():77] message_loop has been closed
