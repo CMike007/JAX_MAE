@@ -18,7 +18,8 @@ from flax import struct
 from gymnax_exchange.jaxob import JaxOrderBookArrays as job
 
 import sys
-sys.path.append('/Users/millionaire/Desktop/UCL/Thesis/AlphaTrade-jaxV3')
+
+sys.path.append('/cs/student/projects3/cf/2023/mbirkenz/JAX_MAE/AlphaTrade-jaxV3')
 
 
 @struct.dataclass
@@ -51,19 +52,19 @@ class EnvParams:
 class BaseLOBEnv(environment.Environment):
     def __init__(self,alphatradePath):
         super().__init__()
-        self.sliceTimeWindow = 1800 # counted by seconds, 1800s=0.5h
+        self.sliceTimeWindow = 1800 # counted by seconds, 1800s=0.5h #adjusted to give the model more time to learn in (one window problem)
         self.stepLines = 100
-        self.messagePath = alphatradePath+"data/messageFiles/"
-        self.orderbookPath = alphatradePath+"data/orderbookFiles/"
+        self.messagePath = alphatradePath+"data/messageFiles7D/"
+        self.orderbookPath = alphatradePath+"data/orderbookFiles7D/"
         self.start_time = 0  # start test at t = 0
-        self.end_time = int(60 * 60 * 24 * 1) # in seconds: 5.5d * 24h * 60min * 60sec
+        self.end_time = int(60 * 60 * 24 * 3) # in seconds: 5.5d * 24h * 60min * 60sec
         self.nOrdersPerSide=100
         self.nTradesLogged=100
         self.book_depth=10
         self.n_actions=3
         self.customIDCounter=0
         self.trader_unique_id=-9000+1
-        self.tick_size=15
+        self.tick_size=10
 
 
 
@@ -195,6 +196,7 @@ class BaseLOBEnv(environment.Environment):
 
 
             max_steps_in_episode_arr = jnp.array([m.shape[0] for m,o in Cubes_withOB],jnp.int32)
+            jax.debug.print("Max Steps in Episode: {}", max_steps_in_episode_arr)
 
             def Cubes_withOB_padding(Cubes_withOB):
                 max_m = max(m.shape[0] for m, o in Cubes_withOB)
