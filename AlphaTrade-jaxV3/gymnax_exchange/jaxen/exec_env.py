@@ -20,12 +20,6 @@ faulthandler.enable()
 print("Num Jax Devices:",jax.device_count(),"Device List:",jax.devices())
 chex.assert_gpu_available(backend=None)
 
-'''
-Change Mike 10.07
-Adjustment to change the price process from an absolut replay to an relativ replay
-!!! OPEN: Please check if the cnl_msgs within the step_env function should be included for the historical_messages
-'''
-
 # #Code snippet to disable all jitting.
 from jax import config
 #config.update("jax_disable_jit", False)
