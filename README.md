@@ -17,9 +17,9 @@ The model is currently trained using the exec_env script (AlphaTrade-jaxV3/gymna
 
   where:
   $$PnL = PnL_{Inventory} + PnL_{Trading} - \gamma * |PnL_{Inventory}|$$
-  $$Flow = (\text{buy\_obj} + \text{sell\_obj}) * P_{mid}(t)
+  $$Flow = (\text{buy\_obj} + \text{sell\_obj}) * P_{mid}(t)$$
   
-\text{buy\_obj} = \min \left( \left( \text{Task}_{\text{TA}} \times \frac{S}{S_{\text{max}}} - \left| Q_{\text{Buy}} - \frac{S}{S_{\text{max}}} \times \text{Task}_{\text{TA}} \right|^{1.3} \right), 30 \right)
+$$\text{buy\_obj} = \min \left( \left( \text{Task}_{\text{TA}} \times \frac{S}{S_{\text{max}}} - \left| Q_{\text{Buy}} - \frac{S}{S_{\text{max}}} \times \text{Task}_{\text{TA}} \right|^{1.3} \right), 30 \right)$$
 \text{sell\_obj} = \min \left( \left( \text{Task}_{\text{TA}} \times \frac{S}{S_{\text{max}}} - \left| Q_{\text{Buy}} - \frac{S}{S_{\text{max}}} \times \text{Task}_{\text{TA}} \right|^{1.3} \right), 30 \right)
 
 Testing is done using the exec_env_test_Sigmoid script (AlphaTrade-jaxV3/gymnax_exchange/jaxen/exec_env). 
