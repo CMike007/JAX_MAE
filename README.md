@@ -16,7 +16,9 @@ The model is currently trained using the exec_env script (AlphaTrade-jaxV3/gymna
   $$R = \omega * \alpha_{TA} * PnL + (1 - \omega) * Flow$$
 
   where:
+  
   $$PnL = PnL_{Inventory} + PnL_{Trading} - \gamma * |PnL_{Inventory}|$$
+  
   $$Flow = (obj_{buy} + obj_{sell}) * P_{mid}(t)$$
   
 Testing is done using the exec_env_test_Sigmoid script (AlphaTrade-jaxV3/gymnax_exchange/jaxen/exec_env). 
